@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Azura Brand Identity — Aadil Abdullah</title>
+<meta name="description" content="Azura Brand Identity for Azura. A branding project by Aadil Abdullah, Creative Designer.">
+<meta name="theme-color" content="#000521">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Azura Brand Identity — Aadil Abdullah">
+<meta property="og:description" content="Azura Brand Identity for Azura. A branding project by Aadil Abdullah, Creative Designer.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+/* Runs before first paint: dark by default, remembers the visitor's choice */
+(function () {
+  var d = document.documentElement, t = 'dark';
+  d.classList.add('js');
+  try { var s = localStorage.getItem('theme'); if (s === 'light' || s === 'dark') t = s; } catch (e) {}
+  d.setAttribute('data-theme', t);
+  // Safety net: if script.js did not run, show everything instead of leaving it hidden
+  setTimeout(function () {
+    if (!d.classList.contains('js-loaded')) d.classList.remove('js');
+    else if (!d.classList.contains('is-ready')) d.classList.add('is-ready');
+  }, 3000);
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html#top">Aadil Abdullah</a>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor" stroke="none"/></svg></button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="mobile-menu-foot"><a href="mailto:aadilabdullah04@gmail.com">aadilabdullah04@gmail.com</a></p>
+</div>
+
+<main id="main">
+
+  <section class="project-head">
+    <div class="container">
+      <a class="back-link" href="index.html#work">All projects</a>
+      <h1 class="project-title">Azura Brand Identity</h1>
+      <div class="project-intro">
+        <p class="project-summary">A brand identity for Azura, a modest-wear fashion label — built to hold contemporary style and thoughtful, high-quality modest design in the same frame.</p>
+        <dl class="project-meta">
+          <div><dt>Client</dt><dd>Azura</dd></div>
+          <div><dt>Role</dt><dd>Brand Identity</dd></div>
+          <div><dt>Year</dt><dd>2025</dd></div>
+          <div><dt>Tools</dt><dd>Photoshop, Illustrator, Figma</dd></div>
+        </dl>
+      </div>
+      <div class="project-cover reveal-img"><img src="assets/img/project2-hero.jpg" width="2400" height="1202" alt="AZURA wordmark over a close-up apparel photograph"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container overview">
+      <h2 class="statement">A modest-wear brand built on the idea that elegance needs no compromise.</h2>
+      <div class="overview-text">
+        <p>AZURA was born from a simple yet profound realization: that modesty and modern style are not mutually exclusive. We believe that true elegance lies in confidence, comfort, and self-expression, regardless of coverage.</p>
+        <p>Our mission is to bridge the gap between contemporary fashion trends and the need for thoughtful, high-quality modest wear.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery ">
+        <figure class="gallery-item reveal-img gallery-item--full"><img src="assets/img/project2-logos.jpg" width="2000" height="1000" alt="AZURA logo lockups across white and tan backgrounds" loading="lazy"></figure>
+        <figure class="gallery-item reveal-img"><img src="assets/img/project2-editorial.jpg" width="1400" height="1046" alt="AZURA editorial photograph of two models in modest wear" loading="lazy"></figure>
+        <figure class="gallery-item reveal-img"><img src="assets/img/project2-jersey.jpg" width="1400" height="1046" alt="AZURA branded oversized jersey apparel graphic" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="next">
+    <div class="container">
+      <a class="next-link" href="project3.html">
+        <span class="next-label">Next project</span>
+        <span class="next-title">Nine Arches Social Media Content</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Aadil Abdullah</p>
+    <p>Creative Designer — Design, Video, UI, Content</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

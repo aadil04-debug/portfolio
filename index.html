@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aadil Abdullah — Creative Designer</title>
+<meta name="description" content="Aadil Abdullah — Creative Designer. Branding, UI design, video and content strategy.">
+<meta name="theme-color" content="#000521">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aadil Abdullah — Creative Designer">
+<meta property="og:description" content="Aadil Abdullah — Creative Designer. Branding, UI design, video and content strategy.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+/* Runs before first paint: dark by default, remembers the visitor's choice */
+(function () {
+  var d = document.documentElement, t = 'dark';
+  d.classList.add('js');
+  try { var s = localStorage.getItem('theme'); if (s === 'light' || s === 'dark') t = s; } catch (e) {}
+  d.setAttribute('data-theme', t);
+  // Safety net: if script.js did not run, show everything instead of leaving it hidden
+  setTimeout(function () {
+    if (!d.classList.contains('js-loaded')) d.classList.remove('js');
+    else if (!d.classList.contains('is-ready')) d.classList.add('is-ready');
+  }, 3000);
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="#top">Aadil Abdullah</a>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor" stroke="none"/></svg></button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="mobile-menu-foot"><a href="mailto:aadilabdullah04@gmail.com">aadilabdullah04@gmail.com</a></p>
+</div>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+        <source src="assets/video/hero-loop.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="container hero-inner">
+      <h1 class="hero-name">
+        <span class="line"><span>Aadil</span></span>
+        <span class="line"><span>Abdullah</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="hero-sub"><strong>Creative Designer</strong>Crafting bold visual identities and digital experiences that move people.</p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="#work">View portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">Recent projects</h2>
+        <p class="section-note">A mix of branding, video and content work — filter by category to browse.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects by category">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-filter="branding" aria-pressed="false">Branding</button>
+        <button class="filter" type="button" data-filter="content" aria-pressed="false">Content</button>
+        <button class="filter" type="button" data-filter="video" aria-pressed="false">Video Editing</button>
+      </div>
+
+      <div class="tiles" id="tiles">
+        <a class="tile" href="project1.html" data-category="branding" data-size="wide">
+          <div class="tile-media reveal-img"><img src="assets/img/project1-hero.jpg" width="2400" height="1202" alt="WildBuds Safaris logo over an African savanna landscape with elephants" loading="lazy"></div>
+          <div class="tile-meta">
+            <h3 class="tile-title">WildBuds Rebranding Visual Identity</h3>
+            <p class="tile-cat">Branding, 2026</p>
+          </div>
+        </a>
+        <a class="tile" href="project2.html" data-category="branding" data-size="narrow">
+          <div class="tile-media reveal-img"><img src="assets/img/project2-hero.jpg" width="2400" height="1202" alt="AZURA wordmark over a close-up apparel photograph" loading="lazy"></div>
+          <div class="tile-meta">
+            <h3 class="tile-title">Azura Brand Identity</h3>
+            <p class="tile-cat">Branding, 2025</p>
+          </div>
+        </a>
+        <a class="tile" href="project3.html" data-category="content" data-size="narrow">
+          <div class="tile-media reveal-img"><img src="assets/img/project3-hero.jpg" width="2400" height="1202" alt="Nine Arches Amaro bottle with logo on a marble surface" loading="lazy"></div>
+          <div class="tile-meta">
+            <h3 class="tile-title">Nine Arches Social Media Content</h3>
+            <p class="tile-cat">Content, 2025</p>
+          </div>
+        </a>
+        <a class="tile" href="project4.html" data-category="content" data-size="wide">
+          <div class="tile-media reveal-img"><img src="assets/img/project4-hero.jpg" width="2400" height="1202" alt="WONDR wordmark logo" loading="lazy"></div>
+          <div class="tile-meta">
+            <h3 class="tile-title">Wondr Social Media Content</h3>
+            <p class="tile-cat">Content, 2025</p>
+          </div>
+        </a>
+        <a class="tile" href="project5.html" data-category="video" data-size="wide">
+          <div class="tile-media reveal-img"><img src="assets/img/project5-hero.jpg" width="2306" height="1116" alt="BlueOak Digital logo mark and wordmark" loading="lazy"></div>
+          <div class="tile-meta">
+            <h3 class="tile-title">BlueOak Digital — Motion Graphics</h3>
+            <p class="tile-cat">Video Editing, 2025</p>
+          </div>
+        </a>
+        <!-- Sixth project: add its image and page, then turn this into a link (see README.txt) -->
+        <div class="tile tile--soon" data-category="video" data-size="narrow">
+          <div class="tile-media"><span>Coming soon</span></div>
+          <div class="tile-meta">
+            <h3 class="tile-title">Short-Form Motion Reels</h3>
+            <p class="tile-cat">Video Editing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <figure class="about-photo reveal-img">
+        <img src="assets/img/about-portrait.jpeg" width="900" height="1145" alt="Portrait of Aadil Abdullah" loading="lazy">
+      </figure>
+      <div class="about-copy">
+        <h2 class="statement">I build visual identities and digital experiences for brands that want to feel unmistakably themselves.</h2>
+        <p>I’m Aadil Abdullah. Working across <strong>branding, UI/UX design, motion graphics, and content strategy</strong>, I help clients move from a rough concept to a fully realized brand presence — creating work that feels intentional at every touchpoint.</p>
+        <p>Every project starts with the same core goal: defining what a brand truly needs to communicate and building a visual identity that is impossible to ignore.</p>
+        <ul class="stats">
+          <li><span class="stat-num"><span class="count" data-count="6">6</span>+</span><span class="stat-label">Years of experience</span></li>
+          <li><span class="stat-num"><span class="count" data-count="48">48</span>+</span><span class="stat-label">Projects completed</span></li>
+          <li><span class="stat-num"><span class="count" data-count="26">26</span>+</span><span class="stat-label">Clients worked with</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="h2">Services</h2>
+        <p class="section-note">Full-service creative support, from first sketch to final export.</p>
+      </div>
+      <ul class="services-list">
+        <li class="service">
+          <h3>Branding &amp; Identity</h3>
+          <p>Logo, guidelines, naming</p>
+        </li>
+        <li class="service">
+          <h3>UI Design</h3>
+          <p>Web design, wireframes, prototyping</p>
+        </li>
+        <li class="service">
+          <h3>Video Editing</h3>
+          <p>Motion, reels, long-form</p>
+        </li>
+        <li class="service">
+          <h3>Content</h3>
+          <p>Social media, posters, campaigns</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="contact-heading">Let’s make something worth remembering</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-sub">Have a project in mind, a role to fill, or just want to say hi? Send me a message.</p>
+          <a class="contact-email" href="mailto:aadilabdullah04@gmail.com">aadilabdullah04@gmail.com</a>
+          <div class="social-links">
+          <a href="https://www.behance.net/aadilabdullah10" target="_blank" rel="noopener">Behance</a>
+          <a href="https://www.instagram.com/aadil.dsgns/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/in/aadil-abdullah04/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:aadilabdullah04@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contactForm" action="https://formspree.io/f/xnpandrq" method="POST">
+            <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
+            <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+            <label class="field"><span>Tell me about your project</span><textarea name="message" rows="4" required></textarea></label>
+            <button class="btn btn--solid" id="formBtn" type="submit">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Aadil Abdullah</p>
+    <p>Creative Designer — Design, Video, UI, Content</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

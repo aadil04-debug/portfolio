@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project title — Aadil Abdullah</title>
+<meta name="description" content="Project title for Client. A branding project by Aadil Abdullah, Creative Designer.">
+<meta name="theme-color" content="#000521">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Project title — Aadil Abdullah">
+<meta property="og:description" content="Project title for Client. A branding project by Aadil Abdullah, Creative Designer.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+/* Runs before first paint: dark by default, remembers the visitor's choice */
+(function () {
+  var d = document.documentElement, t = 'dark';
+  d.classList.add('js');
+  try { var s = localStorage.getItem('theme'); if (s === 'light' || s === 'dark') t = s; } catch (e) {}
+  d.setAttribute('data-theme', t);
+  // Safety net: if script.js did not run, show everything instead of leaving it hidden
+  setTimeout(function () {
+    if (!d.classList.contains('js-loaded')) d.classList.remove('js');
+    else if (!d.classList.contains('is-ready')) d.classList.add('is-ready');
+  }, 3000);
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html#top">Aadil Abdullah</a>
+    <nav class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor" stroke="none"/></svg></button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="mobile-menu-foot"><a href="mailto:aadilabdullah04@gmail.com">aadilabdullah04@gmail.com</a></p>
+</div>
+
+<main id="main">
+
+  <!-- HOW TO USE: copy this file to project6.html, replace everything marked EDIT, then link the
+       sixth tile on index.html to it (see README.txt). Delete these comments when you are done. -->
+
+  <section class="project-head">
+    <div class="container">
+      <a class="back-link" href="index.html#work">All projects</a>
+      <!-- EDIT: project title (copy it exactly from the tile on index.html) -->
+      <h1 class="project-title">Project title</h1>
+      <div class="project-intro">
+        <!-- EDIT: one or two sentence summary -->
+        <p class="project-summary">One or two sentences on what the project was and what you delivered.</p>
+        <dl class="project-meta">
+          <!-- EDIT: the four details -->
+          <div><dt>Client</dt><dd>Client name</dd></div>
+          <div><dt>Role</dt><dd>Your role</dd></div>
+          <div><dt>Year</dt><dd>2026</dd></div>
+          <div><dt>Tools</dt><dd>Figma, Illustrator</dd></div>
+        </dl>
+      </div>
+      <!-- EDIT: main image (2400 x 1200 px works best) -->
+      <div class="project-cover reveal-img"><img src="assets/img/your-main-image.jpg" width="2400" height="1202" alt="Describe the image"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container overview">
+      <!-- EDIT: the core idea in one line -->
+      <h2 class="statement">The core problem or goal, in a few words.</h2>
+      <div class="overview-text">
+        <!-- EDIT: one to three short paragraphs on the brief, your approach and the outcome -->
+        <p>The brief and what the client needed.</p>
+        <p>Your approach and the outcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery">
+        <!-- EDIT: 2 to 6 images. Add class gallery-item--full for a full-width image. -->
+        <figure class="gallery-item reveal-img gallery-item--full"><img src="assets/img/your-wide-image.jpg" width="2000" height="1000" alt="Describe the image" loading="lazy"></figure>
+        <figure class="gallery-item reveal-img"><img src="assets/img/your-image-2.jpg" width="1400" height="1046" alt="Describe the image" loading="lazy"></figure>
+        <figure class="gallery-item reveal-img"><img src="assets/img/your-image-3.jpg" width="1400" height="1046" alt="Describe the image" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="next">
+    <div class="container">
+      <!-- EDIT: link and name of the next project in the sequence -->
+      <a class="next-link" href="project1.html">
+        <span class="next-label">Next project</span>
+        <span class="next-title">WildBuds Rebranding Visual Identity</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Aadil Abdullah</p>
+    <p>Creative Designer — Design, Video, UI, Content</p>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
